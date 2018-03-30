@@ -1,6 +1,6 @@
 {
    "background": {
-      "scripts": [ "ext-onetab-concatenated-sources-background.js" ]
+      "scripts": [ "better_tabs__background.js" ]
    },
    "browser_action": {
       "default_icon": {
@@ -10,24 +10,22 @@
    },
    "commands": {
       "display-onetab": {
-         "description": "Display OneTab",
+         "description": "__MSG_displayOneTab__",
          "suggested_key": {
             "default": "Alt+Shift+1"
          }
       },
       "send-current-tab-to-onetab": {
-         "description": "Send the current tab to OneTab",
-         "suggested_key": {
-            "default": "Alt+Shift+2"
-         }
+         "description": "__MSG_sendCurrentTabToOneTab__"
       }
    },
    "content_scripts": [ {
-      "js": [ "ext-onetab-concatenated-sources-contentscript.js" ],
+      "js": [ "better_tabs__contentscript.js" ],
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-   "description": "Save up to 95% memory and reduce tab clutter",
+   "default_locale": "en",
+   "description": "__MSG_manifestDescription__",
    "icons": {
       "128": "images/extension-icon128.png",
       "16": "images/extension-icon16.png",
@@ -39,5 +37,5 @@
    "options_page": "options.html",
    "permissions": [ "tabs", "\u003Call_urls>", "webRequest", "webRequestBlocking", "contextMenus" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.6"
+   "version": "1.18"
 }

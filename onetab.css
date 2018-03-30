@@ -9,11 +9,12 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 3px;
     box-shadow: 2px 2px 3px #ddd;
+    -moz-box-shadow: 2px 2px 3px #ddd;
     outline: 0;
     -webkit-appearance: textfield;
 }
 
-.cssCheckbox label:after {
+/*.cssCheckbox label:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
@@ -23,7 +24,6 @@ input[type=text] {
     height: 5px;
     background: transparent;
     top: 4px;
-    left: 4px;
     border: 3px solid #333;
     border-top: none;
     border-right: none;
@@ -45,4 +45,4 @@ input[type=text] {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
-}
+} */
